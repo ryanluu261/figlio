@@ -1,13 +1,8 @@
-export default function Poster1() {
+export default function Poster2() {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="max-w-md mx-auto">
-        <h1 className="text-2xl font-bold my-4">My First Poster Project</h1>
-        <img
-          src="/poster2.png"
-          alt="Poster Name"
-          className="rounded-lg shadow-xl"
-        />
+    <div className="h-screen overflow-y-auto">
+      <div className="relative">
+        <img src="/itc.png" alt="Poster Namee" className="w-full" />
       </div>
     </div>
   );
