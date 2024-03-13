@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-10: #1e2578;
+  --color-primary-20: #4559b8;
+  --color-primary-30: #a9b2dc;
+  --color-primary-40: #eaf1fe;
+
+  --color-secondary-10: #f08e46;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Mulish, 'Open Sans', 'Roboto', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(
+    ellipse at top,
+    var(--color-primary-400),
+    var(--color-primary-100)
+  );
+  min-height: 100vh;
+} */

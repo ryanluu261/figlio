@@ -1,41 +1,23 @@
-import type { MetaFunction } from "@remix-run/node";
-
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
-  ];
-};
+import { useDevMode } from '~/contexts/devModeContext';
+import DesignerPage from './DesignerPage';
 
 export default function Index() {
+  const { devMode } = useDevMode();
+
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.8" }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
+    <div className="flex items-center justify-center h-screen">
+      {devMode ? (
+        <div className="flex flex-col w-1/2 mx-auto my-8 h-1/2 justify-center items-center text-2xl font-bold shadow-md">
+          <div>Developer Layout Coming Soon!</div>
+          <img
+            src="/coming-soon.gif"
+            alt="Survey Unavailable"
+            className="w-2/3 mt-4"
+          />
+        </div>
+      ) : (
+        <DesignerPage />
+      )}
     </div>
   );
 }
