@@ -21,8 +21,8 @@ function Sidebar() {
         { name: 'Dev Page 2', key: 2 },
       ]
     : [
-        { name: 'Des Page 1', key: 1 },
-        { name: 'Des Page 2', key: 2 },
+        { name: 'CS25.01: EverPrep', key: 1 },
+        { name: 'CS25.02: ITC Thayer', key: 2 },
       ];
 
   return (
@@ -31,7 +31,7 @@ function Sidebar() {
         {menuItems.map((page) => (
           <div className="group" onClick={() => toggleMenu(page.name)}>
             <div className="flex items-center py-3 px-4 rounded transition duration-200 hover:bg-gray-700 hover:text-white cursor-pointer">
-              <div className="opacity-0 group-hover:opacity-100 transition duration-200 mt-3">
+              <div className="opacity-0 group-hover:opacity-100 transition duration-200">
                 <PlayIcon
                   className={`w-3 transform ${
                     activeMenus[page.name] ? 'rotate-90' : 'rotate-0'
@@ -44,7 +44,9 @@ function Sidebar() {
                   {page.name}
                 </Link>
               ) : (
-                <span>{page.name}</span>
+                <Link to="/poster2" className=" font-medium">
+                  {page.name}
+                </Link>
               )}
             </div>
             {activeMenus[page.name] && (

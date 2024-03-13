@@ -57,7 +57,7 @@ export default function DesignerPage() {
                 />
                 <div className="absolute -top-6 -left-2 opacity-0 group-hover:opacity-100 transition duration-300">
                   <span className="bg-transparent text-[#2596be] text-xs py-1 px-2 rounded">
-                    Poster 1
+                    Poster 1 - made by me
                   </span>
                 </div>
               </div>
@@ -72,7 +72,7 @@ export default function DesignerPage() {
                 />
                 <div className="absolute -top-6 -left-4 opacity-0 group-hover:opacity-100 transition duration-300">
                   <span className="bg-transparent text-[#2596be] text-xs py-2 px-4 rounded">
-                    Poster 2
+                    Poster 2 - also me;)
                   </span>
                 </div>
               </div>
