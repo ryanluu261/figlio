@@ -21,7 +21,7 @@ export const Header = () => {
 
           <nav className="flex items-center justify-center flex-grow">
             <div className="flex items-baseline space-x-4">
-              <div className="px-1 py-2 text-sm font-medium text-gray-300">
+              <div className="px-1 py-2 ml-14 text-sm font-medium text-gray-300">
                 Ryan's Portfolio
               </div>
 
